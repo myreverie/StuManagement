@@ -284,7 +284,7 @@ void delete_hashtable_name(HashTable *H, int &c)
 	if (Get(H->L, pp) != NULL && eq(str, Get(H->L, pp)->name) == 1)
 	{
 		{
-			for (pp = p; pp <= H->size - 1; pp++)
+			for (pp = p; pp <= H->size - 2; pp++)
 			{
 				Set(H->L, Get(H->L, pp + 1), pp); //结点前移
 			}
@@ -313,7 +313,7 @@ void delete_hashtable_id(HashTable *H, int &c)
 	if (Get(H->L, pp) != NULL && eq(idn, Get(H->L, pp)->id) == 1)
 	{
 		{
-			for (pp = p; pp <= H->size - 1; pp++)
+			for (pp = p; pp <= H->size - 2; pp++)
 			{
 				Set(H->L, Get(H->L, pp + 1), pp); //结点前移
 			}
