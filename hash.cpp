@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-#define MAXSIZE 20	  //学生ID的最大长度
-#define MAX_SIZE 20	  //学生名的最大长度
+#define ID_MAX_SIZE 20	  //学生ID的最大长度
+#define NAME_MAX_SIZE 20	  //学生名的最大长度
 #define HASHSIZE 1024 //定义表长
 #define ok 1
 #define error -1
 typedef int Status;
-typedef char RE[MAX_SIZE];
+typedef char RE[NAME_MAX_SIZE];
 typedef struct //记录结构体
 {
 	RE name;
@@ -374,7 +374,7 @@ int main(int argc, char *argv[])
 	}
 	H->size = HASHSIZE;
 	H->count = 0;
-	Record a[MAXSIZE];
+	Record a[ID_MAX_SIZE];
 	printf("欢迎使用基于 HashTable 的学生信息管理系统");
 	printf("\n1.\t添加学生信息");
 	printf("\n2.\t读取学生信息");
