@@ -375,25 +375,23 @@ int main(int argc, char *argv[])
 	H->size = HASHSIZE;
 	H->count = 0;
 	Record a[MAXSIZE];
-	printf("          欢迎使用学生信息管理系统   ");
-	printf("\n        1.  添加学生信息        ");
-	printf("\n        2.  读取学生信息        ");
-	printf("\n        3.  以学生姓名建表        ");
-	printf("\n        4.  以学生ID建表        ");
-	printf("\n        5.  输入学生的姓名进行查找        ");
-	printf("\n        6.  输入学生的ID进行查找        ");
-	printf("\n        7.  输入学生的姓名进行删除        ");
-	printf("\n        8.  输入学生的ID进行删除        ");
-	printf("\n        9.  以学生的姓名进行插入        ");
-	printf("\n        10.  清屏        ");
-	printf("\n        11.  保存        ");
-	printf("\n        12.  退出        ");
-	printf("\n        Attention：        ");
-	printf("\n        Ⅰ.在进行3操作之后才能进行5，7，9操作        ");
-	printf("\n        Ⅱ.进行6，7操作的时候，请先4进行操作          ");
-	printf("\n");
-	printf("请输入你想要的操作：");
-	printf("\n");
+	printf("欢迎使用基于 HashTable 的学生信息管理系统");
+	printf("\n1.\t添加学生信息");
+	printf("\n2.\t读取学生信息");
+	printf("\n3.\t以学生姓名建表");
+	printf("\n4.\t以学生ID建表");
+	printf("\n5.\t输入学生的姓名进行查找");
+	printf("\n6.\t输入学生的ID进行查找");
+	printf("\n7.\t输入学生的姓名进行删除");
+	printf("\n8.\t输入学生的ID进行删除");
+	printf("\n9.\t以学生的姓名进行插入");
+	printf("\n10.\t清屏");
+	printf("\n11.\t保存");
+	printf("\n12.\t退出");
+	printf("\nAttention：");
+	printf("\nⅠ.在进行3操作之后才能进行5，7，9操作");
+	printf("\nⅡ.进行6，7操作的时候，请先4进行操作");
+	printf("\n请输入你想要的操作：\n");
 	while (1)
 	{
 		int num;
@@ -426,7 +424,7 @@ int main(int argc, char *argv[])
 			break;
 		case 8:
 			c = 0;
-			delete_hashtable_id(H, c); //以姓名来删除；
+			delete_hashtable_id(H, c); //以学生ID来删除；
 			break;
 		case 9:
 			c = 0;
