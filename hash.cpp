@@ -364,6 +364,7 @@ void Save()
 }
 int main(int argc, char *argv[])
 {
+	system("chcp 65001 > nul");
 	int c, flag = 1;
 	HashTable *H;
 	H = (HashTable *)malloc(sizeof(HashTable));
